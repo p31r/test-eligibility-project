@@ -23,6 +23,27 @@ class AuditAspect(
     private val auditLogService: AuditLogService
 ) {
 
+    /**
+     * AOP advice that intercepts methods annotated with [Auditable] to log audit information.
+     *
+     * This advice captures request metadata (from method arguments and MDC),
+     * invokes the original method, and stores the result (or exception message) along with
+     * audit metadata into the audit log storage via [auditLogService].
+     *
+     * Audit entries include:
+     * - `clientId` and `correlationId` from the MDC context.
+     * - Method name and type details from the [Auditable] annotation.
+     * - Serialized request parameters and response payloads.
+     *
+     * In case of an exception during method execution, it logs the failure with the error message
+     * and rethrows the exception.
+     *
+     * @param joinPoint The join point representing the method being intercepted.
+     * @param auditable The annotation instance containing audit metadata.
+     * @return The result of the original method execution.
+     * @throws Exception Rethrows any exception thrown by the original method.
+     */
+
     @Around("@annotation(auditable)")
     fun logAudit(joinPoint: ProceedingJoinPoint, auditable: Auditable): Any? {
         logger.debug { "Calling AOP to log audit" }

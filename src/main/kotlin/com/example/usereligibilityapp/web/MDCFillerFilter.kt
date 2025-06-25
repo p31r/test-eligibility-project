@@ -9,6 +9,17 @@ import jakarta.servlet.http.HttpServletResponse
 import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
 
+/**
+ * Servlet filter that populates the [MDC] (Mapped Diagnostic Context) with request-scoped values.
+ *
+ * Extracts headers like `clientId` and `correlation-id` from the incoming HTTP request and places them
+ * into the MDC so they can be included in log messages for traceability and debugging purposes.
+ *
+ * This filter runs once per request and ensures that the context is correctly set before proceeding
+ * down the filter chain.
+ *
+ * @see withMdc for scoped MDC population.
+ */
 @Component
 class MDCFillerFilter : OncePerRequestFilter() {
     override fun doFilterInternal(
