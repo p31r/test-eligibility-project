@@ -1,0 +1,30 @@
+{
+  "1234-56-78-90.12.34.567890": {
+    "client": {
+      "forename": "Filip",
+      "surname": "Moravec",
+      "clientId": "1234-56-78-90.12.34.567890"
+    },
+    "accounts": [
+      {
+        "product_id": "SB0_22291",
+        "iban": "CZ3908000000000735147003",
+        "currency": "CZK"
+      }
+    ]
+  },
+  "1234-56-78-90.12.34.567891": {
+    "client": {
+      "forename": "Filip",
+      "surname": "Moravec",
+      "clientId": "1234-56-78-90.12.34.567891"
+    },
+    "accounts": [
+      {
+        "product_id": "SB0_22291",
+        "iban": "CZ3908000000000735147003",
+        "currency": "CZK"
+      }
+    ]
+  }
+}

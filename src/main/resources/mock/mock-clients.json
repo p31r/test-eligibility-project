@@ -1,0 +1,50 @@
+{
+  "1234-56-78-90.12.34.567890": {
+    "birthDate": "1954-07-04",
+    "clientVerificationLevel": 3,
+    "forename": "ValidUser",
+    "primaryEmail": "test5961813@csas.cz",
+    "gender": "M",
+    "primaryPhone": "420953186843",
+    "pep": false,
+    "verifiedBy": "45244782",
+    "surname": "Moravec",
+    "clientId": "1234-56-78-90.12.34.567890"
+  },
+  "1234-56-78-90.12.34.567891": {
+    "birthDate": "2020-07-04",
+    "clientVerificationLevel": 3,
+    "forename": "YoungUser",
+    "primaryEmail": "test5961813@csas.cz",
+    "gender": "M",
+    "primaryPhone": "420953186843",
+    "pep": false,
+    "verifiedBy": "45244782",
+    "surname": "Moravec",
+    "clientId": "1234-56-78-90.12.34.567891"
+  },
+  "1234-56-78-90.12.34.567892": {
+    "birthDate": "1954-07-04",
+    "clientVerificationLevel": 3,
+    "forename": "NoAccount",
+    "primaryEmail": "test5961813@csas.cz",
+    "gender": "M",
+    "primaryPhone": "420953186843",
+    "pep": false,
+    "verifiedBy": "45244782",
+    "surname": "Moravec",
+    "clientId": "1234-56-78-90.12.34.567892"
+  },
+  "1234-56-78-90.12.34.567893": {
+    "birthDate": "2020-07-04",
+    "clientVerificationLevel": 3,
+    "forename": "YoungUserNoAccount",
+    "primaryEmail": "test5961813@csas.cz",
+    "gender": "M",
+    "primaryPhone": "420953186843",
+    "pep": false,
+    "verifiedBy": "45244782",
+    "surname": "Moravec",
+    "clientId": "1234-56-78-90.12.34.567893"
+  }
+}
